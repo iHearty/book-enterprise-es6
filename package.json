@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --hot --port 8080",
+    "start": "webpack-dev-server --inline --progress --port 8080",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "typings install"
@@ -29,6 +29,7 @@
     "rimraf": "^2.5.4",
     "sass-loader": "^4.0.2",
     "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
     "typings": "^1.4.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
