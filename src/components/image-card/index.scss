@@ -1,0 +1,45 @@
+.image-card-wrapper {
+   display: inline-block;
+   position: relative;
+   cursor: pointer;
+
+   img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .image-card-text-wrapper {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 3px;
+      transition: all linear 300ms;
+
+      .image-card-text {
+         position: absolute;
+         width: 100%;
+         left: 0;
+         bottom: 0;
+         color: white;
+         padding: 5px 8px;
+         text-align: center;
+         box-sizing: border-box;
+         background-color: #00a18a;
+         font-size: 13px;
+      }
+   }
+
+   &:hover {
+      img {
+         -webkit-filter: blur(2px);
+         filter: blur(2px);
+      }
+
+      .image-card-text-wrapper {
+         opacity: 1;
+      }
+   }
+}

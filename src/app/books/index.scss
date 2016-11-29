@@ -1,0 +1,27 @@
+.books-wrapper {
+   flex-grow: 1;
+   margin: 10px;
+   text-align: left;
+   overflow-y: auto;
+
+   .filter-layer {
+      width: 100%;
+      height: 42px;
+      padding-top: 10px;
+      box-sizing: border-box;
+
+      .search-input-layout {
+         width: 220px;
+         height: 100%;
+         display: inline-block;
+      }
+   }
+
+   .book-layer-wrapper {
+      padding: 20px;
+      display: inline-block;
+      width: 140px;
+      height: 180px;
+      box-sizing: border-box;
+   }
+}
